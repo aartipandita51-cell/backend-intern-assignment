@@ -1,17 +1,19 @@
 # Backend Intern Assignment
 
 ## Project Overview
-This project is a scalable backend REST API built using Node.js and Express.js. It includes user authentication, role-based access control, and CRUD operations for a secondary entity (Tasks). A basic React frontend is included to interact with the APIs.
+This project is a scalable backend REST API built using **Node.js** and **Express.js**.  
+It includes user authentication, role-based access control, and CRUD operations for a secondary entity (**Tasks**).  
+A basic **React.js frontend** is included to interact with and test the APIs.
 
 ---
 
 ## Tech Stack
-- Backend: Node.js, Express.js
-- Database: MongoDB
-- Authentication: JWT (JSON Web Tokens)
-- Frontend: React.js
-- API Documentation: Swagger
-- Other Tools: Axios, CORS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JWT (JSON Web Tokens)
+- **Frontend:** React.js
+- **API Documentation:** Swagger
+- **Other Tools:** Axios, CORS
 
 ---
 
@@ -41,7 +43,7 @@ This project is a scalable backend REST API built using Node.js and Express.js. 
 ---
 
 ## Project Structure
-
+```text
 backend-intern-assignment/
 │
 ├── controllers/
@@ -55,83 +57,110 @@ backend-intern-assignment/
 ├── README.md
 └── package.json
 
-
----
-
 ## Setup Instructions
 
 ### Backend Setup
 
-1. Clone the repository:
-```bash
-git clone https://github.com/aartipandita51-cell/backend-intern-assignment.git
+#### Clone the repository
 
-2. Install dependencies:
-```bash
+``` bash
+git clone https://github.com/aartipandita51-cell/backend-intern-assignment.git
+```
+
+#### Install dependencies
+
+``` bash
 cd backend-intern-assignment
 npm install
+```
 
-3. Create a .env file:
-```env
+#### Create a `.env` file
+
+``` env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
+```
 
-4. Start the backend server:
-```bash
+#### Start the backend server
+
+``` bash
 node server.js
+```
 
-5. API documentation will be available at:
-```bash
+#### Swagger API Documentation
+
+``` text
 http://localhost:5000/api-docs
+```
+
+------------------------------------------------------------------------
 
 ### Frontend Setup
 
-1. Navigate to frontend folder:
-```bash
+#### Navigate to frontend folder
+
+``` bash
 cd frontend-intern
+```
 
-2. Install dependencies:
-```bash
+#### Install dependencies
+
+``` bash
 npm install
+```
 
-3. Start frontend:
-```bash
+#### Start frontend
+
+``` bash
 npm start
+```
 
-4. Open browser:
+#### Open in browser
+
+``` text
 http://localhost:3000
+```
 
-**API Endpoints
-**
-**Authentication
-**POST /api/v1/auth/register
-POST /api/v1/auth/login
+------------------------------------------------------------------------
 
-**Tasks** (Protected)
-GET /api/v1/tasks
-POST /api/v1/tasks
-PUT /api/v1/tasks/:id
-DELETE /api/v1/tasks/:id
+## API Endpoints
 
-**Admin
-**GET /api/v1/admin/dashboard
+### Authentication
 
-**API Documentation
-**Swagger UI:
-```bash
+-   `POST /api/v1/auth/register`
+-   `POST /api/v1/auth/login`
+
+### Tasks (Protected)
+
+-   `GET /api/v1/tasks`
+-   `POST /api/v1/tasks`
+-   `PUT /api/v1/tasks/:id`
+-   `DELETE /api/v1/tasks/:id`
+
+### Admin
+
+-   `GET /api/v1/admin/dashboard`
+
+------------------------------------------------------------------------
+
+## API Documentation
+
+Swagger UI available at:
+
+``` text
 http://localhost:5000/api-docs
+```
 
-**Scalability Notes
-**
-Modular architecture allows easy feature expansion
-JWT enables stateless authentication and horizontal scaling
-API versioning (v1) ensures backward compatibility
-Can be scaled further using:
-Redis caching
-Load balancing (NGINX)
-Microservices architecture
+------------------------------------------------------------------------
 
-**Logs
-**
-Basic backend logs are included in logs.txt demonstrating successful API execution.
+## Scalability Notes
+
+-   Modular architecture enables easy feature expansion
+-   JWT provides stateless authentication and supports horizontal
+    scaling
+-   API versioning (`v1`) ensures backward compatibility
+-   Future scalability improvements:
+      -  dis caching
+      -  Load balancing with NGINX
+      -  Microservices architecture
