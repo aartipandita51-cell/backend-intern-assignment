@@ -57,15 +57,15 @@ backend-intern-assignment/
 ├── README.md
 └── package.json
 
-## Setup Instructions
+**Setup Instructions
 
-### Backend Setup
+Backend Setup
 
-#### Clone the repository
-
-``` bash
+Clone the repository
+**
+bash
 git clone https://github.com/aartipandita51-cell/backend-intern-assignment.git
-```
+
 
 #### Install dependencies
 
@@ -164,4 +164,5 @@ http://localhost:5000/api-docs
       -  Redis caching
       -  Load balancing with NGINX
       -  Microservices architecture
+
 
