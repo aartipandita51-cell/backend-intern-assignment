@@ -161,6 +161,7 @@ http://localhost:5000/api-docs
     scaling
 -   API versioning (`v1`) ensures backward compatibility
 -   Future scalability improvements:
-      -  dis caching
+      -  Redis caching
       -  Load balancing with NGINX
       -  Microservices architecture
+
