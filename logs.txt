@@ -1,0 +1,17 @@
+Backend Server Logs
+
+Server running on port 5000
+MongoDB connected successfully
+
+Auth APIs:
+POST /api/v1/auth/register - 201 Created
+POST /api/v1/auth/login - 200 OK
+
+Task APIs:
+GET /api/v1/tasks - 200 OK
+POST /api/v1/tasks - 201 Created
+PUT /api/v1/tasks/:id - 200 OK
+DELETE /api/v1/tasks/:id - 200 OK
+
+Admin APIs:
+GET /api/v1/admin/dashboard - 200 OK
