@@ -1,4 +1,4 @@
-# Backend Intern Assignment
+# Backend Assignment
 
 ## Project Overview
 This project is a scalable backend REST API built using **Node.js** and **Express.js**.  
@@ -164,6 +164,7 @@ http://localhost:5000/api-docs
       -  Redis caching
       -  Load balancing with NGINX
       -  Microservices architecture
+
 
 
 
